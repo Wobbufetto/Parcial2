@@ -1,4 +1,4 @@
-public class App {
+public class GestionImpresoras {
     public static void main(String[] args){
         Impresora i1 = new Impresora("L355", "Hewlett-Packard", false);
         Impresora i2 = new Impresora("L3150", "EPSON", true);

@@ -1,14 +1,18 @@
 public class Impresora {
+    //---------------------------------------------
+    //Atributos
+    //---------------------------------------------
     private String serial;
     private String marca;
     private boolean escaner;
 
-    
-
+    //---------------------------------------------
+    //Constructores
+    //---------------------------------------------
     /**
-     * @param serial
-     * @param marca
-     * @param escaner
+     * @param serial Serial de la impresora
+     * @param marca Marca de la impresora
+     * @param escaner Indicador de escaner
      */
     public Impresora(String serial, String marca, boolean escaner) {
         this.serial = serial;
@@ -16,7 +20,11 @@ public class Impresora {
         this.escaner = escaner;
     }
 
+    //---------------------------------------------
+    //Metodos getters and setters
+    //---------------------------------------------
     /**
+     * Retorna el serial de la impresora
      * @return the serial
      */
     public String getSerial() {
@@ -24,13 +32,7 @@ public class Impresora {
     }
 
     /**
-     * @param serial the serial to set
-     */
-    public void setSerial(String serial) {
-        this.serial = serial;
-    }
-
-    /**
+     * Retorna la marca de la impresora
      * @return the marca
      */
     public String getMarca() {
@@ -38,24 +40,11 @@ public class Impresora {
     }
 
     /**
-     * @param marca the marca to set
-     */
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    /**
+     * Retorna true o false, si tiene escaner o no
      * @return the escaner
      */
     public boolean isEscaner() {
         return escaner;
-    }
-
-    /**
-     * @param escaner the escaner to set
-     */
-    public void setEscaner(boolean escaner) {
-        this.escaner = escaner;
     }
 
     
