@@ -2,13 +2,13 @@ import java.util.List;
 
 public class DatosImpresoras {
 
-    private List<Impresora> impresoras;
+    private static List<Impresora> impresoras;
 
-    public List<Impresora> consultarImpresoras(){
+    public static List<Impresora> consultarImpresoras(){
         return impresoras;
     }
 
-    public Impresora buscarImpresora(String serial){
+    public static Impresora buscarImpresora(String serial){
         for(Impresora i: impresoras){
             if(i.getSerial() == serial){
                 return i;
@@ -17,9 +17,8 @@ public class DatosImpresoras {
         return null;
     }
 
-    
-    public void crearImpresora(String newSerial, String newMarca, Boolean newEscaner){
-        
+    public static void crearImpresora(String newSerial, String newMarca, Boolean newEscaner){
+        System.out.println(newSerial+"  "+newMarca+" "+newEscaner);
         Impresora newImpresora = new Impresora(newSerial, newMarca, newEscaner);
 
         impresoras.add(newImpresora);
